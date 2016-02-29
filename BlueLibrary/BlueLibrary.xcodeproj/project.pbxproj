@@ -93,6 +93,8 @@
 		185B29571C7AF5D900EA251E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18A52C101C7C085D0086725E /* Album+TableRepresentation.h */,
+				18A52C111C7C085D0086725E /* Album+TableRepresentation.m */,
 				185B29521C7ADDEC00EA251E /* AlbumView.h */,
 				185B29531C7ADDEC00EA251E /* AlbumView.m */,
 				18A52C161C7C60400086725E /* HorizontalScroller.h */,
@@ -163,8 +165,6 @@
 				450EECE417A9B05E00957F62 /* HTTPClient.m */,
 				185B29581C7AFBD500EA251E /* LibraryAPI.h */,
 				185B29591C7AFBD500EA251E /* LibraryAPI.m */,
-				18A52C101C7C085D0086725E /* Album+TableRepresentation.h */,
-				18A52C111C7C085D0086725E /* Album+TableRepresentation.m */,
 				185B295B1C7B099A00EA251E /* PersistencyManager.h */,
 				185B295C1C7B099A00EA251E /* PersistencyManager.m */,
 			);

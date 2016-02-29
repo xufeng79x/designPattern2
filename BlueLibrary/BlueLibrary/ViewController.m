@@ -48,9 +48,6 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.76f green:0.81f blue:0.87f alpha:1];
     currentAlbumIndex = 0;
     
-    // 加载前一次的专辑index
-    [self loadPreviousState];
-    
     //2. 通过API获取专辑信息，你不能直接去使用PersistencyManager的方法
     allAlbums = [[LibraryAPI sharedInstance] getAlbums];
     
@@ -61,6 +58,9 @@
     dataTable.dataSource = self;
     dataTable.backgroundView = nil;
     [self.view addSubview:dataTable];
+    
+    // 加载前一次的专辑index
+    [self loadPreviousState];
     
     scroller = [[HorizontalScroller alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 120)];
     scroller.backgroundColor = [UIColor colorWithRed:0.24f green:0.35f blue:0.49f alpha:1];
